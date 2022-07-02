@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #06283D;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.agro.PotatoesController">
+    <children>
+        <AnchorPane layoutX="-5.0" layoutY="85.0" prefHeight="416.0" prefWidth="756.0" style="-fx-background-color: #47B5FF;">
+            <children>
+                <Label layoutX="22.0" layoutY="30.0" prefHeight="66.0" prefWidth="214.0" text="Картошка">
+                    <font>
+                        <Font size="45.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="NumOfPotatoes" layoutX="236.0" layoutY="38.0" prefHeight="50.0" prefWidth="119.0" promptText="Введіть кількість Га" />
+                <Text fx:id="SalaryOfPotatoes" layoutX="461.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Прибуток">
+                    <font>
+                        <Font size="45.0" />
+                    </font>
+                </Text>
+                <Button fx:id="SubmitPotatoes" layoutX="365.0" layoutY="51.0" mnemonicParsing="false" onAction="#submitPotatoes" text="Розрахувати" />
+                <Label layoutX="710.0" layoutY="51.0" text="Грн.">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+        <Label layoutX="319.0" prefHeight="71.0" prefWidth="109.0" text="Agro" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Tahoma" size="53.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

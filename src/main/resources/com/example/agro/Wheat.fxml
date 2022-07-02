@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #06283D;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.agro.WheatController">
+    <children>
+        <AnchorPane layoutX="-5.0" layoutY="85.0" prefHeight="416.0" prefWidth="756.0" style="-fx-background-color: #47B5FF;">
+            <children>
+                <Label contentDisplay="CENTER" layoutX="22.0" layoutY="30.0" prefHeight="66.0" prefWidth="214.0" text="Пшениця" textAlignment="CENTER">
+                    <font>
+                        <Font size="45.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="NumOfWheat" layoutX="236.0" layoutY="39.0" prefHeight="50.0" prefWidth="119.0" promptText="Введіть кількість Га" />
+                <Text fx:id="SalaryOfWheat" layoutX="471.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Прибуток" wrappingWidth="207.12646484375">
+                    <font>
+                        <Font size="45.0" />
+                    </font>
+                </Text>
+                <Button fx:id="SubmitWheat" layoutX="369.0" layoutY="53.0" mnemonicParsing="false" onAction="#submitWheat" text="Розрахувати" />
+                <Label layoutX="714.0" layoutY="52.0" prefHeight="25.0" prefWidth="45.0" text="Грн.">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+            <Text fx:id="CleanerSalaryOfWheat" layoutX="471.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Чистий прибуток">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            </children></AnchorPane>
+        <Label layoutX="319.0" prefHeight="71.0" prefWidth="109.0" text="Agro" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Tahoma" size="53.0" />
+            </font>
+        </Label>
+      <Button fx:id="back" layoutX="678.0" layoutY="14.0" mnemonicParsing="false" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

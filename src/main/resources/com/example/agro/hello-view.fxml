@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #06283D;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.agro.Controller">
+   <children>
+      <AnchorPane layoutX="-5.0" layoutY="85.0" prefHeight="416.0" prefWidth="756.0" style="-fx-background-color: #47B5FF;">
+         <children>
+            <Button fx:id="windowWheat" layoutX="63.0" layoutY="14.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="164.0" text="Пшениця">
+               <font>
+                  <Font size="27.0" />
+               </font></Button>
+            <Button fx:id="windowSunflower" layoutX="296.0" layoutY="14.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="164.0" text="Соняшник">
+               <font>
+                  <Font size="27.0" />
+               </font></Button>
+            <Button fx:id="windowPotatoes" layoutX="534.0" layoutY="14.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="164.0" text="Картопля">
+               <font>
+                  <Font size="27.0" />
+               </font></Button>
+         </children></AnchorPane>
+      <Label layoutX="319.0" prefHeight="71.0" prefWidth="109.0" text="Agro" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="53.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
