@@ -1,7 +1,13 @@
 package com.example.agro;
 
-public class Culc {
-    public String culc(int numOfGa, double zbor, double price) {
-        return String.valueOf(numOfGa * zbor * price);
+public abstract class Culc {
+    private final double culcValue;
+
+    public Culc(int numOfGa, double zbor, double price) {
+        this.culcValue = numOfGa * zbor * price;
+    }
+
+    public double getCulcValue() {
+        return culcValue;
     }
 }

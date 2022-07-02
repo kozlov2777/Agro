@@ -46,19 +46,17 @@ public class SunflowerController implements Initializable {
 //        return String.valueOf((numOfSunflower *1.5*11100)- numOfSunflower*(350+400+350+1000+10+480+180+(8+22+3+16+3+3+8+2+10)*55));                       //55 цена 1 л соляры
 //    }
 
-    public void submitSunflower(ActionEvent event) {
+    public void submitSunflower(ActionEvent event){
         try {
             numOfSunflower = Integer.parseInt(NumOfSunflower.getText());
-            Culc culcSunflower = new Culc();
-            CulcCleaner cleaner = new CulcCleaner();
-            SalaryOfSunflower.setText(cleaner.culc(numOfSunflower, 1.5, 11100.0));
-            CleanerSalaryOfSunflower.setText(cleaner.culcCleaner(numOfSunflower, 1.5, 11100.0));
+            CulcCleaner cleaner = new CulcCleaner(numOfSunflower,3.3,3100);
+            SalaryOfSunflower.setText(String.valueOf(cleaner.getCulcValue()));
+            CleanerSalaryOfSunflower.setText(String.valueOf(cleaner.getCulcCleaner()));
         } catch (Exception e){
             SalaryOfSunflower.setText("error");
         }
 
     }
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         Back backing = new Back();

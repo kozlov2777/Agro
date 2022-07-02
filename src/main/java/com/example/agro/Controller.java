@@ -30,57 +30,65 @@ public class Controller implements Initializable {
         setWindowSunflower();
         setWindowPotatoes();
 
-
     }
-    public void setWindowWheat(){
-        windowWheat.setOnAction(event -> {
-            windowWheat.getScene().getWindow().hide();
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("Wheat.fxml"));
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            Parent root = loader.getRoot();
-            Stage stage  = new Stage();
-            stage.setTitle("Wheat");
-            stage.setScene(new Scene(root));
-            stage.showAndWait();
-        });
+
+    public void setWindowWheat() {
+        SetWindow window = new SetWindow();
+        window.setWindow("Wheat.fxml", windowWheat);
+//        windowWheat.setOnAction(event -> {
+//            windowWheat.getScene().getWindow().hide();
+//            FXMLLoader loader = new FXMLLoader();
+//            loader.setLocation(getClass().getResource("Wheat.fxml"));
+//            try {
+//                loader.load();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//            Parent root = loader.getRoot();
+//            Stage stage  = new Stage();
+//            stage.setTitle("Wheat");
+//            stage.setScene(new Scene(root));
+//            stage.showAndWait();
+//        });
     }
 
     public void setWindowSunflower() {
-        windowSunflower.setOnAction(event -> {
-            windowSunflower.getScene().getWindow().hide();
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("Sunflower.fxml"));
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            Parent root = loader.getRoot();
-            Stage stage  = new Stage();
-            stage.setTitle("Sunflower");
-            stage.setScene(new Scene(root));
-            stage.showAndWait();
-        });
+        SetWindow window = new SetWindow();
+        window.setWindow("Sunflower.fxml", windowSunflower);
+//        windowSunflower.setOnAction(event -> {
+//            windowSunflower.getScene().getWindow().hide();
+//            FXMLLoader loader = new FXMLLoader();
+//            loader.setLocation(getClass().getResource("Sunflower.fxml"));
+//            try {
+//                loader.load();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//            Parent root = loader.getRoot();
+//            Stage stage  = new Stage();
+//            stage.setTitle("Sunflower");
+//            stage.setScene(new Scene(root));
+//            stage.showAndWait();
+//        });
     }
-    public  void setWindowPotatoes(){
-        windowPotatoes.setOnAction(event -> {
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("Potatoes.fxml"));
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            Parent root = loader.getRoot();
-            Stage stage  = new Stage();
-            stage.setTitle("Potatoes");
-            stage.setScene(new Scene(root));
-            stage.showAndWait();
-        });
+
+    public void setWindowPotatoes() {
+        SetWindow window = new SetWindow();
+        window.setWindow("Potatoes.fxml", windowPotatoes);
+//        windowPotatoes.setOnAction(event -> {
+//            FXMLLoader loader = new FXMLLoader();
+//            loader.setLocation(getClass().getResource("Potatoes.fxml"));
+//            try {
+//                loader.load();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//            Parent root = loader.getRoot();
+//            Stage stage  = new Stage();
+//            stage.setTitle("Potatoes");
+//            stage.setScene(new Scene(root));
+//            stage.showAndWait();
+//        });
+//    }
     }
 }

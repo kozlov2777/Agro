@@ -43,10 +43,9 @@ public class WheatController implements Initializable {
     public void submitWheat(ActionEvent event){
         try {
             numOfWheat = Integer.parseInt(NumOfWheat.getText());
-            Culc culcWheat = new Culc();
-            SalaryOfWheat.setText(culcWheat.culc(numOfWheat, 3.3, 3100));
-            CulcCleaner cleaner = new CulcCleaner();
-            CleanerSalaryOfWheat.setText(cleaner.culcCleaner(numOfWheat,3.3,3100));
+            CulcCleaner cleaner = new CulcCleaner(numOfWheat,3.3,3100);
+            SalaryOfWheat.setText(String.valueOf(cleaner.getCulcValue()));
+            CleanerSalaryOfWheat.setText(String.valueOf(cleaner.getCulcCleaner()));
         } catch (Exception e){
             SalaryOfWheat.setText("error");
         }
