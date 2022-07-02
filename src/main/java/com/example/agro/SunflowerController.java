@@ -21,6 +21,9 @@ public class SunflowerController implements Initializable {
     private Button back;
     @FXML
     private Text CleanerSalaryOfSunflower;
+    private double zbor = 1.5;
+    private double price = 11100.0;
+    private  double expenses =(350+400+350+1000+10+480+180+(8+22+3+16+3+3+8+2+10)*55);
 
 
     // 1 га подсолнуха
@@ -61,7 +64,7 @@ public class SunflowerController implements Initializable {
         Back backing = new Back();
         backing.setBack(back);
         Submit submit = new Submit();
-        submit.submit(SubmitSunflower, SalaryOfSunflower, CleanerSalaryOfSunflower, NumOfSunflower);
+        submit.submit(SubmitSunflower, SalaryOfSunflower, CleanerSalaryOfSunflower, NumOfSunflower,zbor, price, expenses);
 
     }
 }

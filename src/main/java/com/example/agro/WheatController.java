@@ -22,7 +22,9 @@ public class WheatController implements Initializable {
     private Text CleanerSalaryOfWheat;
     @FXML
     private Button back;
-
+    private double zbor = 3.3;
+    private double price = 3100.0;
+    private  double expenses =450+350+300+250+1000+2350+750+550+1300+140;
 
 
     // Дисковка 450 гр
@@ -66,7 +68,7 @@ public class WheatController implements Initializable {
         Back backing = new Back();
         backing.setBack(back);
         Submit submit = new Submit();
-        submit.submit(SubmitWheat, SalaryOfWheat, CleanerSalaryOfWheat, NumOfWheat);
+        submit.submit(SubmitWheat, SalaryOfWheat, CleanerSalaryOfWheat, NumOfWheat, zbor, price, expenses);
 
 
     }

@@ -21,7 +21,9 @@ public class PotatoesController implements Initializable {
     private Button SubmitPotatoes;
     @FXML
     private Button back;
-    private int numOfPotatoes;
+    private double zbor = 15.7;
+    private double price = 8000.0;
+    private  double expenses =450+350+300+250+1000+2350+750+550+1300+140;
 
 
 //    public String culcPotatoes(int numOfPotatoes) {
@@ -42,6 +44,6 @@ public class PotatoesController implements Initializable {
         Back backing = new Back();
         backing.setBack(back);
         Submit submit = new Submit();
-        submit.submit(SubmitPotatoes, SalaryOfPotatoes, CleanerSalaryOfPotatoes, NumOfPotatoes);
+        submit.submit(SubmitPotatoes, SalaryOfPotatoes, CleanerSalaryOfPotatoes, NumOfPotatoes, zbor, price, expenses);
     }
 }
