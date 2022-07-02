@@ -23,7 +23,7 @@ public class WheatController implements Initializable {
     @FXML
     private Button back;
 
-    private int numOfWheat;
+
 
     // Дисковка 450 гр
     // Посев 350 грн
@@ -40,17 +40,17 @@ public class WheatController implements Initializable {
     //
     //
     //
-    public void submitWheat(ActionEvent event){
-        try {
-            numOfWheat = Integer.parseInt(NumOfWheat.getText());
-            CulcCleaner cleaner = new CulcCleaner(numOfWheat,3.3,3100);
-            SalaryOfWheat.setText(String.valueOf(cleaner.getCulcValue()));
-            CleanerSalaryOfWheat.setText(String.valueOf(cleaner.getCulcCleaner()));
-        } catch (Exception e){
-            SalaryOfWheat.setText("error");
-        }
-
-    }
+//    public void submitWheat(ActionEvent event){
+//        try {
+//            numOfWheat = Integer.parseInt(NumOfWheat.getText());
+//            CulcCleaner cleaner = new CulcCleaner(numOfWheat,3.3,3100);
+//            SalaryOfWheat.setText(String.valueOf(cleaner.getCulcValue()));
+//            CleanerSalaryOfWheat.setText(String.valueOf(cleaner.getCulcCleaner()));
+//        } catch (Exception e){
+//            SalaryOfWheat.setText("error");
+//        }
+//
+//    }
 //    public String culcWheatCleaner(int numOfWheat){
 //        return String.valueOf((numOfWheat * 3.3 * 3100)-numOfWheat*(450+350+300+250+1000+2350+750+550+1300+140));
 //    }
@@ -65,5 +65,9 @@ public class WheatController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         Back backing = new Back();
         backing.setBack(back);
+        Submit submit = new Submit();
+        submit.submit(SubmitWheat, SalaryOfWheat, CleanerSalaryOfWheat, NumOfWheat);
+
+
     }
 }

@@ -19,17 +19,28 @@
                         <Font size="45.0" />
                     </font>
                 </Text>
-                <Button fx:id="SubmitPotatoes" layoutX="365.0" layoutY="51.0" mnemonicParsing="false" onAction="#submitPotatoes" text="Розрахувати" />
+                <Button fx:id="SubmitPotatoes" layoutX="365.0" layoutY="51.0" mnemonicParsing="false"
+                        text="Розрахувати" />
                 <Label layoutX="710.0" layoutY="51.0" text="Грн.">
                     <font>
                         <Font size="17.0" />
                     </font>
                 </Label>
+            <Text fx:id="CleanerSalaryOfPotatoes" layoutX="461.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Чистий прибуток">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
             </children></AnchorPane>
         <Label layoutX="319.0" prefHeight="71.0" prefWidth="109.0" text="Agro" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font name="Tahoma" size="53.0" />
             </font>
         </Label>
+      <Button fx:id="back" layoutX="684.0" layoutY="14.0" mnemonicParsing="false" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>

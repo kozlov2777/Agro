@@ -19,7 +19,7 @@
                         <Font size="45.0" />
                     </font>
                 </Text>
-                <Button fx:id="SubmitWheat" layoutX="369.0" layoutY="53.0" mnemonicParsing="false" onAction="#submitWheat" text="Розрахувати" />
+                <Button fx:id="SubmitWheat" layoutX="369.0" layoutY="53.0" mnemonicParsing="false" text="Розрахувати" />
                 <Label layoutX="714.0" layoutY="52.0" prefHeight="25.0" prefWidth="45.0" text="Грн.">
                     <font>
                         <Font size="17.0" />
